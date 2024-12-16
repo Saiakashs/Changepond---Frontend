@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <form method="post">
+
+        <div>
+            <label for="uname">Enter Your FullName</label>
+            <input type="text" name="fname" id="uname" placeholder="enter your fullname" 
+             pattern="^[a-zA-Z ]{2,20}$" minlength="2" maxlength="20" required>  
+        </div>
+
+        <br>
+
+        
+        <div>
+            <label for="upass">Enter Your Password</label>
+            <input type="password" name="password" id="upass" placeholder="enter your password" 
+             pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>  
+        </div>
+
+        <br>
+        <div>
+            <label for="uemail">Enter Your Email</label>
+            <input type="email" name="email" id="uemail" placeholder="enter your email" 
+             pattern="^[a-zA-Z0-9@.]{2,30}$" required>  
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phonenumber">Enter Your Phone Number</label>
+            <input type="tel" name="phonenumber" id="phonenumber" placeholder="enter your phone number" 
+             pattern="^[0-9]{9,11}$" required>  
+        </div>
+
+        <br>
+
+        <div>
+            <label for="dob">Select Your DateOfBirth:</label>
+            <input type="date" id="dob" name="dateofbirth" value="dob" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="gender">Select your Gender:</label>
+            <input type="radio" id="gender" name="gender" value="male" checked>Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <input type="radio" id="gender" name="gender" value="other">Other
+        </div>
+
+        <br>
+
+        <div>
+            <label for="education">Select your Qualification:</label>
+            <input type="checkbox" name="edu" id="education" value="sslc">SSLC
+            <input type="checkbox" name="edu" id="education" value="hsc">HSC
+            <input type="checkbox" name="edu" id="education" value="ug">UG
+            <input type="checkbox" name="edu" id="education" value="pg">PG
+        </div>
+
+        <br>
+
+        <div>
+            <label for="courses">Select Your Courses:</label>
+            <select name="courses" id="courses" multiple required>
+                <option value="">Select Your Courses</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="fees">Fees</label>
+            <input type="text" value="10000" name="fees" id="fees" readonly disabled>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="feedback">Give Your Feedback:</label>
+            <textarea name="feedback" id="feedback" cols="" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>

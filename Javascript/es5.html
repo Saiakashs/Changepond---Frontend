@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript 5</title>
+</head>
+<body>
+    
+
+    <script>
+        let std=["Tarun","Rahul","Sai","Madhav","Rishi"];
+
+        //forEach()
+
+        std.forEach((val,index) => {
+            document.write(`${val},`);
+        });
+
+
+        let num=[1,2,4,5,7,8,9,10,12,14,16,17,20,21,22];
+
+         //map()
+
+        let mapOut=num.map((val,index)=> {
+            return val*2;
+        });
+
+        document.writeln(`<br> ${mapOut} <br>`);
+
+        //filter()
+
+        let filterOut=num.filter((val,index)=> {
+            return val%2!=0;
+        });
+
+        document.write(`${filterOut} <br>`);
+
+        //every())
+
+        let everyOut=num.every((val,index)=> {
+            return val>0;
+        });
+
+        document.write(`${everyOut} <br>`);
+
+        //some()
+
+        let someOut=num.some((val,index)=> {
+            return val>2;
+        });
+
+        document.write(`${someOut} <br>`);
+
+        //reduce / ReduceRight
+
+        
+        let add=num.reduce((prev,next)=> {
+            return prev+next;
+        });
+
+        document.write(`${add} <br>`);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        let students=["Sai","Arun","Prasath"];
+        console.log(students);
+        console.log(students[2]);  // access array data outside
+        students[1]="ARUN";     //update array data
+        console.log(students);
+        console.log("array length:",students.length);
+        console.log("array size",students.length-1);
+
+        // how to iterate array
+
+        for(let i=0;i<students.length;i++){
+            document.write(students[i]+"<br>");
+        }
+
+        document.write("============================<br>");
+
+
+        //for of loop
+
+        for(let s of students){
+            document.write(s+"<br>");
+        }
+
+            //for of loop
+
+        for(let s in students){
+            document.write(s+"<br>");
+        }
+
+        //push
+
+        students.push("Sannkresh");
+        students.push("Karthik","Sriram");
+
+        console.log(students);
+
+        //pop
+
+        students.pop();
+        console.log(students);
+
+        //unshift
+
+        students.unshift("Mamta","Raju");
+        console.log(students);
+
+        //shift
+
+        students.shift();
+        console.log(students);
+
+        //splice
+
+        students.splice(2,0,"Ashwin","Akash","Anush");
+        console.log(students);
+
+        students.splice(1,1);
+        console.log(students);
+
+        students.splice(0,1,"Vijay");
+        console.log(students);
+
+        //toString()
+
+        console.log(students.toString());
+
+        //join(separator)
+
+        console.log(students.join());
+
+        console.log(students.join("*"));
+        
+        console.log(students.join(" "));
+    
+
+
+    
+    </script>
+</body>
+</html>

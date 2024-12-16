@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+    <script>
+
+        // simple function or default function
+
+        function greeting(){
+            return "Welcome You All in Javascript Session <br>";
+        }
+
+        document.write(greeting());
+
+        let data=greeting();
+        document.write(data);
+
+        // parameterized function
+
+        function add(num1,num2){
+            return num1+num2;
+        }
+
+        document.write(add(50,60),"<br>");
+        document.write(add(60,100),"<br>");
+
+        function add2(num1,num2){
+            return num1+num2 + "<br>";
+        }
+
+        document.write(add2(10,20));
+        document.write(add2(30,40));
+
+        // advance function
+
+        // anonymous function
+
+        let mul = function(num1,num2){
+            return num1*num2 + "<br>";
+        };
+
+        document.write(mul(8,3));
+
+        // arrow function
+
+        let div = (num1,num2) => {
+            return num1 / num2 + "<br>";
+        };
+
+        document.write(div(8,3));
+
+        let div2 = (num1,num2) => num1 / num2 + "<br>";
+
+        document.write(div2(10,3));
+
+
+        // optional parameterized function
+
+        let fullName = (fname,lname,mname="") => {
+            return fname+" "+mname+" "+lname+"<br>";
+        };
+
+        document.write(fullName("Sai","S","Kutthalingam"));
+
+        document.write(fullName("ArunKumar","N"));
+
+        // rest parameterized function
+
+        let stdList = (...std) => {
+            return std;
+        };
+
+        document.write(stdList("Sai","Arun","Prasath"));
+
+    </script>
+</body>
+</html>

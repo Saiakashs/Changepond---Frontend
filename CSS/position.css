@@ -1,0 +1,52 @@
+header{
+    background-color: pink;
+    border-bottom: 5px solid blue;
+    padding: 10px;
+}
+
+.logo{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+
+.parent{
+    border: 2px solid red;
+    background-color: antiquewhite;
+    position: relative;
+    top:10px;
+    left: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+.child{
+    border:2px solid blue;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.pos-fixed{
+    border: 1px solid black;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+}
+
+.pos-fixed img{
+    width: 50px;
+    height: 50px;
+}
+
+.pos-sticky{
+    border: 1px solid red;
+    background: aquamarine ;
+    position: sticky;
+    top: 0px;
+}

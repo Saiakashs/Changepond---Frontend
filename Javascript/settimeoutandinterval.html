@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greeting(){
+            console.log("Hi");
+        }
+
+        setTimeout(greeting,3000);
+
+        setTimeout(()=>{
+            console.log("hello");
+        },4000);
+
+
+        setInterval(greeting,2000);
+
+        setInterval(()=>{
+            console.log("hello Friends");
+        },6000);
+    </script>
+</body>
+</html>

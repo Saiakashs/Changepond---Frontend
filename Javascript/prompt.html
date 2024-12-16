@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    
+    <script>
+
+        let value=prompt("Enter Your Name:","Sai Kutthalingam S");
+        document.write(`${value} <br>`);
+
+        let data=prompt("Enter Your Name:","Sai Kutthalingam S");
+         document.write(`${data} <br>`);
+        let ldata=data.toLocaleLowerCase();
+        if(ldata==='a' || ldata==='e' || ldata==='i' || ldata==='o' || ldata==='u'){
+            document.write(`The entered value ${data} is vowels`);
+        }
+        else{
+             document.write(`The entered value ${data} is consonants`);
+        }
+
+        let data2=prompt("Enter a Number:",1);
+        document.write(`${data2} <br>`);
+        let ldata2=parseInt(data2);
+        if((ldata2%2)==0){
+            document.write(`The entered value ${data2} is even`);
+        }
+        else{
+            document.write(`The entered value ${data2} is odd`);
+        }
+
+        let data3=prompt("Enter Your Email:","saiakash200236@gmail.com");
+
+        if(data3.search("@gmail.com")==="@gmail.com" || data3.search("@yahoo.com")==="@yahoo.com" || data3.search("@hotmail.com")==="@hotmail.com" || data3.search("@changepond.com")==="@changepond.com"){
+            document.write("Your enetered email is correct" + "<br>");
+            
+        }
+        else{
+            document.write("Your enetered email is not correct");
+        }
+    </script>
+</body>
+</html>

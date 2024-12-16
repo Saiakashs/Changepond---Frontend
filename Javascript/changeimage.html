@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+</head>
+<body>
+    <img src="../assets/images/1_petra_jordan.jpeg" alt="Petra" id="d1" height="100px" width="200px"> <br>
+    <button type="button" onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage(){
+                document.getElementById("d1").src = "../assets/images/2_wall_china.jpg" 
+                document.getElementById("d1").alt = "Wall Of China"; 
+            
+     }
+    </script>
+</body>
+</html>

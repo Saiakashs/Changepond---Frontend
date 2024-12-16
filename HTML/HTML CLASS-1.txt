@@ -1,0 +1,135 @@
+HTML
+
+Types of tag:
+
+1. paired tag: Every tag has ON tag and OFF tag
+2. unpaired tag: The tag don't have OFF tag.
+
+Steps to create html file
+
+1. filename format is filename.html or filename.html
+
+
+Structure of webpage:
+
+1. <!DOCTYPE html>- It tells search engine this is html type of document belogns to version 5.
+2. head - It contains external links and meta data in it.
+3. body - It displays the contents to the user or browser.
+4. meta data - meta tag gives us information about data.
+5. <meta charset="UTF-8">- it converts the code into machine readable input
+6. <meta name="viewport" content="width=device-width, initial-scale=1.0">- This code helps to adapt webpage to different size devices
+
+
+
+Nested tag:
+
+ <b><i><u>Karthik</u></i></b>  // Nested tag
+
+Element:
+
+ 1.It contain starting tag, ending tag.
+ 2.<startingTag attribute ="value"> content</endingTag>
+ 3.Attribute: It always write in starting tag.
+			  It provide additional information about tag
+			  It comes with key and value pairs format
+			  
+In HTML  there are two types of element
+1.Block level element: It doesn't allow other tag contents on its tag space or line. Example: br,h1-h6,p,li,table,form
+2.Inline level element: It allows other tag contents on its tag space or line. Example: img,a,b,i,u
+
+
+List:
+
+1.Unordered list: bulleted,circle,square,none
+2.Ordered list: numbered,uppercase char, lowercase char
+3.Description list: 
+dl - description list opening tag
+dt- description title
+dd - description data
+
+HTML5:
+
+1.Semantic element introduce: The element which has meaning in it name
+eg.header,footer,nav,main,section,aside
+2.New input type,new attribute and new tag:
+3. Multimedia element : We can insert video and video file.
+4.HTML API : 
+1.It return user current location
+2.If you want to use it, gps must have install in system
+3.drag and drop: grabbing an object from one location and put at another place.
+4.web worker: It is small javascript code which execute at backend of browser without affecting it s current execution.
+5.web storage: 
+1.It is use to store user data on browser
+2.There are two ypes of web storage
+3.Local storage : it is used to store user data for permanently
+4.session storage: it is used to store user data for limited time.
+5.SSE(Server sent event): It allows us to get automatic update form server
+
+Difference about HTML and HTML5 TAGS:
+
+1. <b>Karthik</b>| <strong>karthik</strong><br>
+
+strong tag - helps for digital marketing, this strong contents reccommended first for search engine.
+    
+2. <i>Prakash</i>|<em>Prakash</em><br>
+
+3. <u>Radha</u> | <ins>Radha</ins><br>
+
+4. <div title ="World wide web">WWW</div><!-- This one occupies full space (block level element) -->
+    <abbr title="World wide web">WWW</abbr>// this one is inline element
+    
+5. <address> // It shows italic in nature
+        Changepond technology,<br>
+        2nd lane,SIPCOT,NAVALUR, <br>
+        chennai,Tamilnadu
+    </address>
+6. <pre> tag - creates the own style by user by adding spaces , usually browsers removes all unwanted white spaces
+
+<pre>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Quibusdam temporibus fugit accusamus nostrum 
+        esse ea quam maiores! Optio cupiditate pariatur, cum accusamus, soluta atque deserunt explicabo dignissimos deleniti tenetur ducimus?
+    Veniam beatae obcaecati aut animi pariatur repellendus neque? 
+    Eius voluptate aliquam vel doloribus voluptatibus, eos vero adipisci
+     possimus dignissimos iste corporis eum recusandae excepturi odit ea quas delectus?
+      Voluptatibus, consequuntur!
+    Corporis maiores cupiditate quidem dolorum exercitationem ut in quia 
+    neque veniam laborum non quas adipisci molestias tempore voluptatum reiciendis voluptas, pariatur fugit ea quae ipsum. Eum non neque odio voluptas.
+</pre>
+
+Special code and symbols:
+
+1. Displaying mathematical expressions: &alpha;&beta;&gamma;
+2. Currency symbols: $100,&pound;&#8377;
+3. Emoji symbols: &#128512
+4. Using tag has content:  <p>in html &lt;br&gt; tag is use for line break</p>
+5. iframe: 
+It is use to create small window in webpage.
+we can use iframe tag for 
+1. display youtube videos
+2. display google maps
+3. display one website into another website
+
+
+
+Form:
+
+The form is used to submit the user data. We use two methods for that.
+
+GET:
+
+1.The user data will be visible in browser url.
+2.You are not prefered to use this method for submitting confidential data.
+3.There is character limitation in sending the data through get method.
+
+POST:
+
+1.The user data will not  be visible in browser url.
+2.You are prefered to use this method for submitting confidential data.
+3.There is no character limitation in sending the data through POST method.
+
+
+alt+shift+F = to apply align of previous contents
+
+
+
+ 

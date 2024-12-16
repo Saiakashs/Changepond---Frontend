@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaScript 6</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //useofspread
+
+        let frontEnd=["HTML","CSS","Javascript","React"];
+        document.write(`Frontend:${frontEnd} <br>`);
+
+        let backEnd=["Java","Python"];
+        document.write(`Backend:${backEnd} <br>`);
+
+        let fullStack=[frontEnd.concat(backEnd,"Dot Net","PHP")];
+        document.write(`FullStack:${fullStack} <br>`);
+
+        let fullStack2=[...frontEnd,backEnd,"Dot Net","PHP"];
+        document.write(`FullStack:${fullStack2} <br>`);
+    </script>
+</body>
+</html>

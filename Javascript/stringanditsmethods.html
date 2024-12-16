@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String And Its Methods</title>
+</head>
+<body>
+    
+    <script>
+        let msg="Welcome you all in Changepond, you all are future in Changepond";
+        document.write(`${msg} <br>`);
+        document.write(`${msg.length} <br>`);
+        document.write(`${msg.toUpperCase()} <br>`);
+        document.write(`${msg.toLowerCase()} <br>`);
+
+        //use of indexOf method
+
+        document.write(`msg.indexOf("all"): ${msg.indexOf("all")} <br>`);
+        document.write(`msg.indexOf("all,16"): ${msg.indexOf("all",16)} <br>`);
+
+        //use of lastIndexOf method
+
+        document.write(`msg.lastIndexOf("you"): ${msg.lastIndexOf("you")} <br>`);
+        document.write(`msg.lastIndexOf("you,28"): ${msg.lastIndexOf("you",28)} <br>`);
+
+        
+        //use of search method
+
+        document.write(`msg.search("Changepond"): ${msg.search("Changepond")} <br>`);
+
+        //use of slice
+        
+        document.write(`msg.slice(5): ${msg.slice(5)} <br>`);
+        document.write(`msg.slice(5,15): ${msg.slice(5,15)} <br>`);
+        document.write(`msg.slice(-20,-5): ${msg.slice(-20,-5)} <br>`);
+        document.write(`msg.slice(-20): ${msg.slice(-20)} <br>`);
+
+        //use of substring
+
+        document.write(`msg.substring(5): ${msg.substring(5)} <br>`);
+        document.write(`msg.substring(5,10): ${msg.substring(5,10)} <br>`);
+
+         //use of substr
+
+        document.write(`msg.substr(5): ${msg.substr(5)} <br>`);
+        document.write(`msg.substr(5,5): ${msg.substr(5,5)} <br>`);
+
+        //use of charAt()
+
+        document.write(`msg.charAt(5): ${msg.charAt(5)} <br>`);
+
+        //use of charCodeAt()
+
+        document.write(`msg.charCodeAt(5): ${msg.charCodeAt(5)} <br>`);
+
+        //use of replace()
+
+        document.write(`msg.replace("Changepond","India"): ${msg.replace("Changepond","India")} <br>`);
+        document.write(`msg.replace("Changepond","India"): ${msg.replace(/changepond/i,"India")} <br>`);
+        document.write(`msg.replace("Changepond","India"): ${msg.replace(/changepond/ig,"India")} <br>`);
+        document.write(`msg.replace("Changepond","India"): ${msg.replaceAll("Changepond","India")} <br>`);
+
+        //use of split()
+
+        console.log(msg.split());
+        console.log(msg.split(" "));
+
+        console.log(msg);
+    </script>
+</body>
+</html>
